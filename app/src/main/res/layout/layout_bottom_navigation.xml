@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.wanandroid.widge.view.ButtonNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:button="@null"
+        android:drawableTop="@drawable/ic_home_black_24dp"
+        android:text="首页"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_knowledge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTop="@drawable/ic_apps_black_24dp"
+        android:gravity="center"
+        android:text="知识体系"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_wechat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_home"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_home" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTop="@drawable/ic_wechat_black_24dp"
+        android:gravity="center"
+        android:text="公众号"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_navigation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_knowledge"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_knowledge" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTop="@drawable/ic_navigation_black_24dp"
+        android:gravity="center"
+        android:text="导航"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_tab_project"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_wechat"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_wechat" />
+
+    <RadioButton
+        android:id="@+id/main_button_tab_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:button="@null"
+        android:drawableTop="@drawable/ic_project_black_24dp"
+        android:gravity="center"
+        android:text="项目"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_tab_navigation"
+        app:layout_constraintTop_toTopOf="@+id/main_button_tab_navigation" />
+</com.example.wanandroid.widge.view.ButtonNavigationView>

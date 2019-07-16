@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">bannerlibrary</string>
+
+    <declare-styleable name="JBanner">
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleColor" format="color|reference"/>
+        <attr name="indicatorRadius" format="dimension"/>
+        <attr name="indicatorNormalColor" format="color|reference"/>
+        <attr name="indicatorSelectedColor" format="reference|color"/>
+    </declare-styleable>
+</resources>
